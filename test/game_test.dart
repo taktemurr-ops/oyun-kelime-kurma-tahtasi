@@ -23,4 +23,10 @@ void main() {
       }
     }
   });
+
+  test('çevrimiçi ve aynı cihazda 2–4 kişi; Günün Bulmacası dışında (rakipli oyun)', () {
+    expect(kelimeTahtasiRules.localPlayers, 4);
+    expect(kelimeTahtasiRules.onlineSeatChoices, [2, 3, 4]);
+    expect(kelimeTahtasiRules.globalDaily, isFalse);
+  });
 }
